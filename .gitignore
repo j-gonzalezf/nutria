@@ -1,0 +1,33 @@
+# Dependencias
+node_modules/
+.pnpm-store/
+
+# Build
+dist/
+.astro/
+.output/
+.vite/
+
+# Entorno — NUNCA subir claves.
+# Ojo especialmente a la service_role de Supabase: se salta el RLS.
+.env
+.env.*
+!.env.example
+
+# Plataformas
+.vercel
+supabase/.temp/
+supabase/.branches/
+
+# Editores y SO
+.vscode/*
+!.vscode/extensions.json
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
+npm-debug.log*
+pnpm-debug.log*

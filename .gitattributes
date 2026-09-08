@@ -1,0 +1,19 @@
+# El repositorio guarda siempre LF, y la copia de trabajo también,
+# sea cual sea el sistema. Así Windows y el build de Vercel (Linux)
+# ven exactamente los mismos ficheros.
+* text=auto eol=lf
+
+# Binarios: no tocar nunca
+*.png    binary
+*.jpg    binary
+*.jpeg   binary
+*.webp   binary
+*.avif   binary
+*.ico    binary
+*.woff   binary
+*.woff2  binary
+*.pdf    binary
+
+# Volcados de datos nutricionales: sin diff, serían ilegibles
+*.csv    -diff
+*.xml    -diff
