@@ -79,8 +79,8 @@ búsqueda inversa · Escáner de códigos de barras.
 
 ```bash
 # día a día
-git checkout develop && git push
+git switch develop && git push
 
 # publicar
-git checkout main && git merge develop && git push && git checkout develop
+git switch main && git merge develop && git push && git switch develop
 ```
